@@ -1,0 +1,40 @@
+{
+  "name": "week1-level3-assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "checknode": "node scripts/checkEnv.js hello-from-npm-script",
+    "dev": "live-server --port=3003",
+    
+    "lint:js": "eslint . --ext .js",
+    "lint:css": "stylelint \"styles/**/*.css\"",
+    "lint:html": "htmlhint ./**/*.html",
+    "lint": "npm run lint:js && npm run lint:css && npm run lint:html",
+
+    "lint:js:fix": "eslint . --ext .js --fix",
+    "lint:css:fix": "stylelint \"styles/**/*.css\" --fix",
+    "lint:fix": "npm run lint:js:fix && npm run lint:css:fix"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WaltavianKelley/week1-level3-assignment.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WaltavianKelley/week1-level3-assignment/issues"
+  },
+  "homepage": "https://github.com/WaltavianKelley/week1-level3-assignment#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "dependencies": {
+    "axios": "^1.13.2",
+    "bootstrap": "^5.3.8",
+    "lodash": "^4.17.21"
+  }
+}
